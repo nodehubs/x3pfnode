@@ -1,20 +1,22 @@
-# 功能介绍
+English| [简体中文](./README_cn.md)
 
-RDK X3 Performance Node，基于Web打造的RDK X3 & RDK X3 Module 性能监测应用，监测CPU, BPU, Memory和Disk。 无论是什么品牌的电脑和手机，同一局域网下只需要在浏览器访问即可体验。
+# Function Introduction
+
+RDK X3 Performance Node, a performance monitoring application for RDK X3 & RDK X3 Module built on the web, monitoring CPU, GPU, Memory, and Disk. Whether it's a computer or a mobile phone of any brand, simply access it in the browser on the same local area network to experience it.
 
 [![desktop_demo](./doc/desktop_demo.jpg)](./doc/desktop_demo.jpg)
 
 [![mult_device](./doc/mult_device.jpg)](./doc/mult_device.jpg)
 
-# 物料清单
+# Bill of Materials
 
-| 机器人名称             | 生产厂家 | 参考链接                                       |
-| ---------------------- | -------- | ---------------------------------------------- |
-| RDK X3（任何内存版本） | 多厂家   | [点击跳转](https://developer.horizon.cc/rdkx3) |
+| Robot Name            | Manufacturer | Reference Link                                 |
+| ----------------------| ------------ | ---------------------------------------------- |
+| RDK X3 (Any memory version) | Multiple Manufacturers | [Click to jump](https://developer.horizon.cc/rdkx3) |
 
-# 使用方法
+# Instructions
 
-**安装Flask和psutil**
+**Install Flask and psutil**
 
 ```
 pip install psutil -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
@@ -24,34 +26,30 @@ pip install psutil -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirr
 pip install flask -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
 ```
 
-**启动RDK X3后，通过终端SSH或者VNC连接机器人，复制如下命令在RDK的系统上运行，完成相关Node的安装。**
+**After starting RDK X3, connect to the robot via terminal SSH or VNC, copy and run the following commands on the RDK system to complete the installation of the related Node.**
 
 ```
 sudo apt update
 sudo apt install -y tros-x3pfnode
 ```
 
-**运行**
+**Run**
 
 ```
 source /opt/tros/setup.bash
 ros2 run x3pfnode x3pfnode
 ```
 
-**在同一局域网访问X3的5000端口即可**
+**Access X3 on port 5000 in the same local area network**
 
 ```
 IP:5000
 ```
 
-# 接口说明
+# Interface Description
 
-暂无，未来会基于ROS2话题通讯机制重构。
+None for now, it will be restructured based on the ROS2 topic communication mechanism in the future.# Frequently Asked Questions
 
-# 常见问题
+See the comments section.
 
-见评论区。
-
-
-
-觉得还不错就点个赞再走吧~
+If you find it helpful, please give it a like before you go~
